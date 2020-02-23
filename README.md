@@ -1,4 +1,24 @@
-# TSDX Bootstrap
+# 🐘 Mastodonte JS
+
+Mastodonte JS es un generador de palabras para los mastodontes, cracks y figuras como tú.
+
+TODO: basado en lorem-ipsum.
+
+## Instalación
+
+TODO
+
+## Usando la clase Mastodonte
+
+TODO
+
+## Usando la función mastodonte
+
+TODO
+
+---
+
+## TSDX Bootstrap
 
 This project was bootstrapped with [TSDX](https://github.com/jaredpalmer/tsdx).
 
