@@ -2,7 +2,7 @@
 
 Mastodonte JS es un generador de palabras para los mastodontes, cracks y figuras como tú.
 
-<img src="https://i.imgur.com/SWBGkkT.gif" />
+<img src="https://i.imgur.com/5BEM3oA.gif" />
 
 Esta librería es simplemente un lorem ipsum pero usando las palabras adecuadas para los máquinas, genios y artistas. De hecho, Mastodonte JS está construido sobre [lorem-ipsum.js](https://github.com/knicklabs/lorem-ipsum.js), así que puedes leer su documentación para saber más sobre las opciones disponibles.
 
