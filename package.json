@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "1.0.0",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -29,7 +29,29 @@
     "trailingComma": "es5"
   },
   "name": "mastodonte",
-  "author": "Mario Beltrán Alarcón",
+  "author": {
+    "name": "Mario Beltrán Alarcón",
+    "email": "belco90@gmail.com",
+    "url": "https://mario.dev/"
+  },
+  "description": "🐘 Mastodonte JS - un generador de palabras para los mastodontes, cracks y figuras como tú.",
+  "keywords": [
+    "lorem",
+    "ipsum",
+    "placeholder",
+    "text",
+    "dummy",
+    "mastodonte",
+    "texto"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Belco90/mastodonte-js.git"
+  },
+  "homepage": "https://github.com/Belco90/mastodonte-js",
+  "bugs": {
+    "url": "https://github.com/testing-library/eslint-plugin-testing-library/issues"
+  },
   "module": "dist/mastodonte.esm.js",
   "devDependencies": {
     "@types/jest": "^25.1.3",
