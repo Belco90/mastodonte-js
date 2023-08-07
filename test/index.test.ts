@@ -6,7 +6,7 @@ describe('mastodonte function', () => {
     const result = mastodonte();
 
     expect(result.split('. ')).toHaveLength(1);
-    result.split(' ').forEach(generatedWord => {
+    result.split(' ').forEach((generatedWord) => {
       const sanitizedWord = generatedWord.replace('.', '').toLowerCase();
       expect(MASTODONTE_WORDS).toContain(sanitizedWord);
     });
@@ -16,7 +16,7 @@ describe('mastodonte function', () => {
     const result = mastodonte({ count: 3 });
 
     expect(result.split('. ')).toHaveLength(3);
-    result.split(' ').forEach(generatedWord => {
+    result.split(' ').forEach((generatedWord) => {
       const sanitizedWord = generatedWord.replace('.', '').toLowerCase();
       expect(MASTODONTE_WORDS).toContain(sanitizedWord);
     });
@@ -30,7 +30,7 @@ describe('Mastodonte class', () => {
     const result = mastodonteGenerator.generateSentences(1);
 
     expect(result.split('. ')).toHaveLength(1);
-    result.split(' ').forEach(generatedWord => {
+    result.split(' ').forEach((generatedWord) => {
       const sanitizedWord = generatedWord.replace('.', '').toLowerCase();
       expect(MASTODONTE_WORDS).toContain(sanitizedWord);
     });
@@ -47,7 +47,7 @@ describe('Mastodonte class', () => {
 
     const words = result.split(' ');
     expect(words).toHaveLength(15);
-    words.forEach(generatedWord => {
+    words.forEach((generatedWord) => {
       const sanitizedWord = generatedWord.replace('.', '').toLowerCase();
       expect(MASTODONTE_WORDS).toContain(sanitizedWord);
     });

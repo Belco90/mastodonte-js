@@ -10,6 +10,9 @@
     "test:coverage": "tsdx test --coverage",
     "lint": "tsdx lint",
     "lint:fix": "tsdx lint --fix",
+    "prettier-base": "prettier . --ignore-unknown --cache --log-level warn",
+    "format": "pnpm prettier-base --write",
+    "format:check": "pnpm prettier-base --check",
     "prepare": "tsdx build"
   },
   "dependencies": {
@@ -20,6 +23,7 @@
     "@types/lodash.deburr": "^4.1.6",
     "husky": "^4.2.3",
     "lodash.deburr": "^4.1.0",
+    "prettier": "^3.0.1",
     "tsdx": "^0.12.3",
     "tslib": "^1.11.0",
     "typescript": "^3.8.2"
@@ -29,12 +33,6 @@
     "pnpm": "^8.6.0"
   },
   "packageManager": "pnpm@8.6.12",
-  "prettier": {
-    "printWidth": 80,
-    "semi": true,
-    "singleQuote": true,
-    "trailingComma": "es5"
-  },
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
