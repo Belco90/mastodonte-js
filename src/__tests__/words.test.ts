@@ -1,5 +1,6 @@
-import MASTODONTE_WORDS from '../src/words';
 import deburr from 'lodash.deburr';
+
+import MASTODONTE_WORDS from '../words';
 
 it('should store unique words', () => {
   const sanitizedWords = MASTODONTE_WORDS.map((word) =>

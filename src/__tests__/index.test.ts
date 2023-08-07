@@ -1,5 +1,5 @@
-import { mastodonte, Mastodonte } from '../src/index';
-import MASTODONTE_WORDS from '../src/words';
+import { mastodonte, Mastodonte } from '../index';
+import MASTODONTE_WORDS from '../words';
 
 describe('mastodonte function', () => {
   it('should generate words with default options', () => {
