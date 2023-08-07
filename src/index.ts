@@ -1,6 +1,4 @@
 import { loremIpsum, LoremIpsum, type ILoremIpsumParams } from 'lorem-ipsum';
-// eslint-disable-next-line import/no-unresolved
-import { type IGeneratorOptions } from 'lorem-ipsum/types/src/lib/generator';
 
 import MASTODONTE_WORDS from './words';
 
@@ -11,14 +9,16 @@ const mastodonte = (args: ILoremIpsumParams = {}): string => {
   });
 };
 
+type LoremIpsumConstructorParams = ConstructorParameters<typeof LoremIpsum>;
+
 class Mastodonte extends LoremIpsum {
-  constructor(
-    options: IGeneratorOptions = {},
-    format?: string,
-    suffix?: string
-  ) {
-    options.words = MASTODONTE_WORDS;
-    super(options, format, suffix);
+  constructor(...args: LoremIpsumConstructorParams) {
+    const [options, format, suffix] = args;
+
+    const superOptions = options ? options : {};
+    superOptions.words = MASTODONTE_WORDS;
+
+    super(superOptions, format, suffix);
   }
 }
 
