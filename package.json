@@ -29,11 +29,6 @@
     "pnpm": "^8.6.0"
   },
   "packageManager": "pnpm@8.6.12",
-  "husky": {
-    "hooks": {
-      "pre-commit": "tsdx lint"
-    }
-  },
   "prettier": {
     "printWidth": 80,
     "semi": true,
