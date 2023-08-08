@@ -2,9 +2,10 @@
 	"name": "mastodonte",
 	"version": "1.0.0",
 	"description": "🐘 Mastodonte JS - un generador de palabras para los mastodontes, cracks y figuras como tú.",
+	"type": "module",
 	"scripts": {
-		"start": "echo 'TODO'",
-		"build": "echo 'TODO'",
+		"build": "tsup",
+		"start": "pnpm build --watch",
 		"prepare": "is-ci || husky install",
 		"test": "jest",
 		"test:watch": "pnpm test -- --watch",
@@ -35,6 +36,7 @@
 		"lint-staged": "^13.2.3",
 		"lodash.deburr": "^4.1.0",
 		"prettier": "3.0.1",
+		"tsup": "^7.2.0",
 		"typescript": "^5.1.6"
 	},
 	"engines": {
@@ -43,12 +45,21 @@
 	},
 	"packageManager": "pnpm@8.6.12",
 	"license": "MIT",
-	"main": "dist/index.js",
-	"typings": "dist/index.d.ts",
 	"files": [
 		"dist"
 	],
-	"module": "dist/mastodonte.esm.js",
+	"module": "./dist/index.js",
+	"typings": "./dist/index.d.ts",
+	"exports": {
+		".": {
+			"types": {
+				"default": "./dist/index.d.ts"
+			},
+			"import": {
+				"default": "./dist/index.js"
+			}
+		}
+	},
 	"author": {
 		"name": "Mario Beltrán",
 		"email": "me@mario.dev",
