@@ -5,6 +5,7 @@
 	"type": "module",
 	"scripts": {
 		"build": "tsup",
+		"postbuild": "cpy README.md ./dist && cpy package.json ./dist && cpy LICENSE ./dist && echo \"meta files copied\"",
 		"start": "pnpm build --watch",
 		"prepare": "is-ci || husky install",
 		"test": "jest",
@@ -28,6 +29,7 @@
 		"@types/lodash.deburr": "^4.1.6",
 		"@typescript-eslint/eslint-plugin": "^6.2.1",
 		"@typescript-eslint/parser": "^6.2.1",
+		"cpy-cli": "^5.0.0",
 		"eslint": "^8.46.0",
 		"eslint-config-prettier": "^9.0.0",
 		"eslint-plugin-import": "^2.28.0",
