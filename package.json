@@ -1,7 +1,7 @@
 {
 	"name": "mastodonte",
 	"version": "0.0.0-semantically-released",
-	"description": "🐘 Mastodonte JS - un generador de palabras para los mastodontes, cracks y figuras como tú.",
+	"description": "🐘 mastodonte - un generador de palabras para los mastodontes, cracks y figuras como tú.",
 	"type": "module",
 	"scripts": {
 		"build": "tsup",
@@ -84,6 +84,6 @@
 	},
 	"homepage": "https://github.com/Belco90/mastodonte-js",
 	"bugs": {
-		"url": "https://github.com/testing-library/eslint-plugin-testing-library/issues"
+		"url": "https://github.com/Belco90/mastodonte-js/issues"
 	}
 }
