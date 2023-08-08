@@ -1,11 +1,11 @@
-import deburr from 'lodash.deburr';
+import deburr from 'lodash.deburr'
 
-import MASTODONTE_WORDS from '../words';
+import MASTODONTE_WORDS from '../words'
 
 it('should store unique words', () => {
-  const sanitizedWords = MASTODONTE_WORDS.map((word) =>
-    deburr(word.toLowerCase())
-  );
-  const uniqueWords = new Set(sanitizedWords);
-  expect(sanitizedWords).toEqual(Array.from(uniqueWords));
-});
+	const sanitizedWords = MASTODONTE_WORDS.map((word) =>
+		deburr(word.toLowerCase()),
+	)
+	const uniqueWords = new Set(sanitizedWords)
+	expect(sanitizedWords).toEqual(Array.from(uniqueWords))
+})
