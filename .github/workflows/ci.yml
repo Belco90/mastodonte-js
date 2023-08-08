@@ -31,7 +31,6 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      # Act
       - name: Run script
         run: pnpm run ${{ matrix.validation_script }}
   tests:
@@ -55,6 +54,5 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      # Act
       - name: Run script
         run: pnpm run test:ci

@@ -1,6 +1,6 @@
 {
 	"name": "mastodonte",
-	"version": "1.0.0",
+	"version": "0.0.0-semantically-released",
 	"description": "🐘 Mastodonte JS - un generador de palabras para los mastodontes, cracks y figuras como tú.",
 	"type": "module",
 	"scripts": {
@@ -15,7 +15,8 @@
 		"prettier-base": "prettier . --ignore-unknown --cache --log-level warn",
 		"format": "pnpm prettier-base --write",
 		"format:check": "pnpm prettier-base --check",
-		"type-check": "tsc --noEmit"
+		"type-check": "tsc --noEmit",
+		"semantic-release": "semantic-release"
 	},
 	"dependencies": {
 		"lorem-ipsum": "^2.0.3"
@@ -36,6 +37,7 @@
 		"lint-staged": "^13.2.3",
 		"lodash.deburr": "^4.1.0",
 		"prettier": "3.0.1",
+		"semantic-release": "^21.0.7",
 		"tsup": "^7.2.0",
 		"typescript": "^5.1.6"
 	},
