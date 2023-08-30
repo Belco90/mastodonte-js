@@ -3,6 +3,7 @@ const config = {
 	transform: {
 		'^.+\\.ts$': '@swc/jest',
 	},
+	reporters: [['github-actions', { silent: false }], 'summary'],
 	coverageThreshold: {
 		global: {
 			branches: 100,
