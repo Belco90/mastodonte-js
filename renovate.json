@@ -1,32 +1,17 @@
 {
 	"extends": [
-		"config:best-practices",
+		"config:js-lib",
+		"docker:pinDigests",
+    "helpers:pinGitHubActionDigests",
 		":automergeTypes",
 		":automergeLinters",
 		":automergeTesters",
 		":automergeRequireAllStatusChecks",
 		"npm:unpublishSafe",
-		"helpers:disableTypesNodeMajor",
-		":pinOnlyDevDependencies"
+		"helpers:disableTypesNodeMajor"
 	],
-	"prCreation": "not-pending",
 	"lockFileMaintenance": {
 		"enabled": true,
 		"automerge": true
-	},
-	"internalChecksFilter": "strict",
-	"platformAutomerge": true,
-	"packageRules": [
-		{
-			"description": "Get pnpm updates once a month",
-			"matchDepTypes": ["packageManager"],
-			"matchPackageNames": ["pnpm"],
-			"extends": ["schedule:monthly"]
-		},
-		{
-			"description": "Get GitHub Actions updates once a month",
-			"matchDepTypes": ["action"],
-			"extends": ["schedule:monthly"]
-		}
-	]
+	}
 }
