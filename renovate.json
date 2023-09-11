@@ -2,7 +2,7 @@
 	"extends": [
 		"config:js-lib",
 		"docker:pinDigests",
-    "helpers:pinGitHubActionDigests",
+		"helpers:pinGitHubActionDigests",
 		":automergeTypes",
 		":automergeLinters",
 		":automergeTesters",
