@@ -13,5 +13,12 @@
 	"lockFileMaintenance": {
 		"enabled": true,
 		"automerge": true
-	}
+	},
+	"packageRules": [
+		{
+			"description": "Auto-merge swc monorepo",
+			"extends": ["monorepo:swc"],
+			"automerge": true
+		}
+	]
 }
