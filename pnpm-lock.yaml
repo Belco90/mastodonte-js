@@ -20,8 +20,8 @@ devDependencies:
     specifier: 29.5.6
     version: 29.5.6
   '@types/lodash.deburr':
-    specifier: 4.1.7
-    version: 4.1.7
+    specifier: 4.1.8
+    version: 4.1.8
   '@typescript-eslint/eslint-plugin':
     specifier: 6.8.0
     version: 6.8.0(@typescript-eslint/parser@6.8.0)(eslint@8.51.0)(typescript@5.2.2)
@@ -1404,8 +1404,8 @@ packages:
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
     dev: true
 
-  /@types/lodash.deburr@4.1.7:
-    resolution: {integrity: sha512-mEhqJ5z6W8eP1oAfPho8UKcycutVuWjMfRguktDLTk+9mn+bSdbN4uPfUtUbRNnxjGsYmRwwPThTtkwvnuU+Fg==}
+  /@types/lodash.deburr@4.1.8:
+    resolution: {integrity: sha512-toL1rPWrsQa4+yLP+0p+S82IdWqtJHJ6Y59JSaqXuxWdO7QnvtsixqReUkSmu+8ZH9jD72DplkHjKIQnjh1y9g==}
     dependencies:
       '@types/lodash': 4.14.199
     dev: true
