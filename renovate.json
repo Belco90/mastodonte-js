@@ -19,6 +19,12 @@
 			"description": "Auto-merge swc monorepo",
 			"extends": ["monorepo:swc"],
 			"automerge": true
-		}
+		},
+		{
+			"description": "Get pnpm updates once a month",
+			"matchDepTypes": ["packageManager"],
+			"matchPackageNames": ["pnpm"],
+			"extends": ["schedule:monthly"]
+		},
 	]
 }
