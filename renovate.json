@@ -25,6 +25,6 @@
 			"matchDepTypes": ["packageManager"],
 			"matchPackageNames": ["pnpm"],
 			"extends": ["schedule:monthly"]
-		},
+		}
 	]
 }
