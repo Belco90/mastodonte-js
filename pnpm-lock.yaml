@@ -35,8 +35,8 @@ devDependencies:
     specifier: 9.1.0
     version: 9.1.0(eslint@8.55.0)
   eslint-plugin-import:
-    specifier: 2.29.0
-    version: 2.29.0(@typescript-eslint/parser@6.18.0)(eslint@8.55.0)
+    specifier: 2.29.1
+    version: 2.29.1(@typescript-eslint/parser@6.18.0)(eslint@8.55.0)
   husky:
     specifier: 8.0.3
     version: 8.0.3
@@ -2568,8 +2568,8 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-plugin-import@2.29.0(@typescript-eslint/parser@6.18.0)(eslint@8.55.0):
-    resolution: {integrity: sha512-QPOO5NO6Odv5lpoTkddtutccQjysJuFxoPS7fAHO+9m9udNHvTCPSAMW9zGAYj8lAIdr40I8yPCdUYrncXtrwg==}
+  /eslint-plugin-import@2.29.1(@typescript-eslint/parser@6.18.0)(eslint@8.55.0):
+    resolution: {integrity: sha512-BbPC0cuExzhiMo4Ff1BTVwHpjjv28C5R+btTOGaCRC7UEz801up0JadwkeSk5Ued6TG34uaczuVuH6qyy5YUxw==}
     engines: {node: '>=4'}
     peerDependencies:
       '@typescript-eslint/parser': '*'
