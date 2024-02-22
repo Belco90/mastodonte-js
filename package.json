@@ -22,7 +22,7 @@
 		"lorem-ipsum": "^2.0.8"
 	},
 	"devDependencies": {
-		"@swc/core": "1.4.1",
+		"@swc/core": "1.4.2",
 		"@swc/jest": "0.2.36",
 		"@types/jest": "29.5.12",
 		"@types/lodash.deburr": "4.1.9",
