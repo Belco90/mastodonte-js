@@ -45,7 +45,7 @@
 		"node": "^16.0.0 || ^18.0.0 || ^20.0.0",
 		"pnpm": "^8.6.0"
 	},
-	"packageManager": "pnpm@8.10.3",
+	"packageManager": "pnpm@8.15.4",
 	"license": "MIT",
 	"files": [
 		"dist",
