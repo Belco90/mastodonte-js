@@ -35,8 +35,8 @@ devDependencies:
     specifier: 9.1.0
     version: 9.1.0(eslint@8.57.0)
   eslint-plugin-import:
-    specifier: 2.29.1
-    version: 2.29.1(@typescript-eslint/parser@8.4.0)(eslint@8.57.0)
+    specifier: 2.30.0
+    version: 2.30.0(@typescript-eslint/parser@8.4.0)(eslint@8.57.0)
   husky:
     specifier: 9.1.5
     version: 9.1.5
@@ -1238,6 +1238,10 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  /@rtsao/scc@1.1.0:
+    resolution: {integrity: sha512-zt6OdqaDoOnJ1ZYsCYGt9YmWzDXl4vQdKTyJev62gFhRGKdx7mcT54V9KIjg+d2wi9EXsPvAPKe7i7WjfVWB8g==}
+    dev: true
 
   /@sec-ant/readable-stream@0.4.1:
     resolution: {integrity: sha512-831qok9r2t8AlxLko40y2ebgSDhenenCatLVeW/uBtnHPyhHOvG0C7TvfgecV+wHzIm5KUICgzmVpWS+IMEAeg==}
@@ -2752,8 +2756,8 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-module-utils@2.8.2(@typescript-eslint/parser@8.4.0)(eslint-import-resolver-node@0.3.9)(eslint@8.57.0):
-    resolution: {integrity: sha512-3XnC5fDyc8M4J2E8pt8pmSVRX2M+5yWMCfI/kDZwauQeFgzQOuhcRBFKjTeJagqgk4sFKxe1mvNVnaWwImx/Tg==}
+  /eslint-module-utils@2.11.0(@typescript-eslint/parser@8.4.0)(eslint-import-resolver-node@0.3.9)(eslint@8.57.0):
+    resolution: {integrity: sha512-gbBE5Hitek/oG6MUVj6sFuzEjA/ClzNflVrLovHi/JgLdC7fiN5gLAY1WIPW1a0V5I999MnsrvVrCOGmmVqDBQ==}
     engines: {node: '>=4'}
     peerDependencies:
       '@typescript-eslint/parser': '*'
@@ -2781,8 +2785,8 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-plugin-import@2.29.1(@typescript-eslint/parser@8.4.0)(eslint@8.57.0):
-    resolution: {integrity: sha512-BbPC0cuExzhiMo4Ff1BTVwHpjjv28C5R+btTOGaCRC7UEz801up0JadwkeSk5Ued6TG34uaczuVuH6qyy5YUxw==}
+  /eslint-plugin-import@2.30.0(@typescript-eslint/parser@8.4.0)(eslint@8.57.0):
+    resolution: {integrity: sha512-/mHNE9jINJfiD2EKkg1BKyPyUk4zdnT54YgbOgfjSakWT5oyX/qQLVNTkehyfpcMxZXMy1zyonZ2v7hZTX43Yw==}
     engines: {node: '>=4'}
     peerDependencies:
       '@typescript-eslint/parser': '*'
@@ -2791,6 +2795,7 @@ packages:
       '@typescript-eslint/parser':
         optional: true
     dependencies:
+      '@rtsao/scc': 1.1.0
       '@typescript-eslint/parser': 8.4.0(eslint@8.57.0)(typescript@5.5.4)
       array-includes: 3.1.8
       array.prototype.findlastindex: 1.2.5
@@ -2800,7 +2805,7 @@ packages:
       doctrine: 2.1.0
       eslint: 8.57.0
       eslint-import-resolver-node: 0.3.9
-      eslint-module-utils: 2.8.2(@typescript-eslint/parser@8.4.0)(eslint-import-resolver-node@0.3.9)(eslint@8.57.0)
+      eslint-module-utils: 2.11.0(@typescript-eslint/parser@8.4.0)(eslint-import-resolver-node@0.3.9)(eslint@8.57.0)
       hasown: 2.0.2
       is-core-module: 2.15.1
       is-glob: 4.0.3
