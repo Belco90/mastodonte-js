@@ -36,7 +36,7 @@
 		"lint-staged": "15.2.9",
 		"lodash.deburr": "4.1.0",
 		"prettier": "3.3.3",
-		"semantic-release": "24.1.0",
+		"semantic-release": "24.2.0",
 		"tsup": "8.3.0",
 		"typescript": "5.6.3"
 	},
