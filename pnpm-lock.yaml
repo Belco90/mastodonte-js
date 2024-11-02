@@ -14,8 +14,8 @@ devDependencies:
     specifier: 1.7.40
     version: 1.7.40
   '@swc/jest':
-    specifier: 0.2.36
-    version: 0.2.36(@swc/core@1.7.40)
+    specifier: 0.2.37
+    version: 0.2.37(@swc/core@1.7.40)
   '@types/jest':
     specifier: 29.5.14
     version: 29.5.14
@@ -1487,8 +1487,8 @@ packages:
     resolution: {integrity: sha512-e2BR4lsJkkRlKZ/qCHPw9ZaSxc0MVUd7gtbtaB7aMvHeJVYe8sOB8DBZkP2DtISHGSku9sCK6T6cnY0CtXrOCQ==}
     dev: true
 
-  /@swc/jest@0.2.36(@swc/core@1.7.40):
-    resolution: {integrity: sha512-8X80dp81ugxs4a11z1ka43FPhP+/e+mJNXJSxiNYk8gIX/jPBtY4gQTrKu/KIoco8bzKuPI5lUxjfLiGsfvnlw==}
+  /@swc/jest@0.2.37(@swc/core@1.7.40):
+    resolution: {integrity: sha512-CR2BHhmXKGxTiFr21DYPRHQunLkX3mNIFGFkxBGji6r9uyIR5zftTOVYj1e0sFNMV2H7mf/+vpaglqaryBtqfQ==}
     engines: {npm: '>= 7.0.0'}
     peerDependencies:
       '@swc/core': '*'
