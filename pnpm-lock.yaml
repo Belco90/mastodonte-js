@@ -55,7 +55,7 @@ importers:
         specifier: 5.7.2
         version: 5.7.2
       vitest:
-        specifier: ^3.0.4
+        specifier: 3.0.4
         version: 3.0.4(@types/node@22.10.10)(yaml@2.6.1)
 
 packages:
