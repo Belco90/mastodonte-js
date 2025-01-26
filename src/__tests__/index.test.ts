@@ -1,3 +1,5 @@
+import { describe, it, expect } from 'vitest'
+
 import { mastodonte, Mastodonte } from '../index'
 import MASTODONTE_WORDS from '../words'
 
