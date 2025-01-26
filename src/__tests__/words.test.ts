@@ -1,4 +1,5 @@
 import deburr from 'lodash.deburr'
+import { it, expect } from 'vitest'
 
 import MASTODONTE_WORDS from '../words'
 
