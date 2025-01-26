@@ -42,9 +42,9 @@
 	},
 	"engines": {
 		"node": "^16.0.0 || ^18.0.0 || ^20.0.0 || >=22.0.0",
-		"pnpm": "^8.6.0"
+		"pnpm": "^9.15.0"
 	},
-	"packageManager": "pnpm@8.15.9",
+	"packageManager": "pnpm@9.15.4",
 	"license": "MIT",
 	"files": [
 		"dist",
