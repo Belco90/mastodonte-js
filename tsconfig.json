@@ -1,13 +1,29 @@
 {
 	"include": ["src", "tsup.config.ts"],
 	"compilerOptions": {
+		/* Base options */
+		"esModuleInterop": true,
+		"skipLibCheck": true,
 		"target": "es6",
-		"module": "esnext",
-		"importHelpers": true,
+		"allowJs": true,
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"verbatimModuleSyntax": true,
+
+		/* Strictness */
+		"strict": true,
+		"noUncheckedIndexedAccess": true,
+		"noImplicitOverride": true,
+
+		/* Building for a library */
+		"module": "ESNext",
+		"moduleResolution": "bundler",
 		"declaration": true,
+
+		/* Other */
+		"importHelpers": true,
 		"sourceMap": true,
 		"rootDir": "./",
-		"strict": true,
 		"noImplicitAny": true,
 		"strictNullChecks": true,
 		"strictFunctionTypes": true,
@@ -19,8 +35,6 @@
 		"noImplicitReturns": true,
 		"noFallthroughCasesInSwitch": true,
 		"forceConsistentCasingInFileNames": true,
-		"moduleResolution": "node",
-		"baseUrl": "./",
-		"esModuleInterop": true
+		"baseUrl": "./"
 	}
 }
