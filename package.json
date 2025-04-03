@@ -42,7 +42,7 @@
 		"node": "^20.0.0 || ^22.0.0",
 		"pnpm": "^9.15.0"
 	},
-	"packageManager": "pnpm@9.15.6",
+	"packageManager": "pnpm@9.15.9",
 	"license": "MIT",
 	"files": [
 		"dist",
