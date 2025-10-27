@@ -14,7 +14,7 @@ on:
     types: [opened, synchronize]
 
 permissions:
-  id-token: write  # Required for OIDC
+  id-token: write # Required for OIDC
   contents: read
 
 concurrency:
