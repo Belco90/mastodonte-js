@@ -13,6 +13,10 @@ on:
   pull_request:
     types: [opened, synchronize]
 
+permissions:
+  id-token: write # Required for OIDC
+  contents: read
+
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
@@ -94,5 +98,4 @@ jobs:
       - name: Release the new version to NPM Registry
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: pnpm run semantic-release
