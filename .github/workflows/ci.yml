@@ -91,6 +91,9 @@ jobs:
         with:
           node-version-file: '.nvmrc'
           cache: 'pnpm'
+      - name: Update npm
+        # Ensure npm 11.5.1 or later is installed for correct OIDC publishing
+        run: npm install -g npm@latest
       - name: Install dependencies
         run: pnpm install
       - name: Build the package
