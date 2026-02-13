@@ -81,9 +81,9 @@ export default [
 		...tseslint.configs.disableTypeChecked,
 	},
 
-	// JavaScript files - disable type-checked rules
+	// CommonJS files - disable type-checked rules
 	{
-		files: ['**/*.js', '**/*.mjs', '**/*.cjs'],
+		files: ['**/*.cjs'],
 		...tseslint.configs.disableTypeChecked,
 		languageOptions: {
 			sourceType: 'commonjs',
@@ -94,6 +94,12 @@ export default [
 				__filename: 'readonly',
 			},
 		},
+	},
+
+	// ES Module JavaScript files - disable type-checked rules
+	{
+		files: ['**/*.js', '**/*.mjs'],
+		...tseslint.configs.disableTypeChecked,
 	},
 
 	// Prettier config to turn off conflicting rules (must be last)
