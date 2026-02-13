@@ -82,12 +82,11 @@ export default defineConfig([
 		...tseslint.configs.disableTypeChecked,
 	},
 
-	// CommonJS files - disable type-checked rules
+	// JavaScript files - disable type-checked rules
 	{
-		files: ['**/*.cjs'],
+		files: ['**/*.js', '**/*.mjs', '**/*.cjs'],
 		...tseslint.configs.disableTypeChecked,
 		languageOptions: {
-			sourceType: 'commonjs',
 			globals: {
 				require: 'readonly',
 				module: 'readonly',
@@ -95,12 +94,6 @@ export default defineConfig([
 				__filename: 'readonly',
 			},
 		},
-	},
-
-	// ES Module JavaScript files - disable type-checked rules
-	{
-		files: ['**/*.js', '**/*.mjs'],
-		...tseslint.configs.disableTypeChecked,
 	},
 
 	// Prettier config to turn off conflicting rules (must be last)
