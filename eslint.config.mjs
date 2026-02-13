@@ -78,7 +78,13 @@ export default tseslint.config(
 
 	// Config files - disable type-checked rules
 	{
-		files: ['*.config.ts', '*.config.mts', '*.config.js', '*.config.mjs', '*.config.cjs'],
+		files: [
+			'*.config.ts',
+			'*.config.mts',
+			'*.config.js',
+			'*.config.mjs',
+			'*.config.cjs',
+		],
 		extends: [tseslint.configs.disableTypeChecked],
 	},
 
