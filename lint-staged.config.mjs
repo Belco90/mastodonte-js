@@ -10,7 +10,7 @@ const removeIgnoredFiles = async (files) => {
 }
 
 const lintStagedConfig = {
-	'**/*.{js,jsx,ts,tsx}': async (files) => {
+	'**/*.{js,jsx,ts,tsx,mjs,cjs,mts}': async (files) => {
 		const filesToLint = await removeIgnoredFiles(files)
 		return [`eslint --max-warnings=0 ${filesToLint}`]
 	},

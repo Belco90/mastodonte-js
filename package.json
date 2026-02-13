@@ -10,7 +10,7 @@
 		"test": "vitest run",
 		"test:watch": "vitest watch",
 		"test:ci": "pnpm test -- --coverage",
-		"lint": "eslint . --ext .js,.jsx,.ts,.tsx --ignore-path .gitignore --max-warnings 0 --report-unused-disable-directives",
+		"lint": "eslint . --max-warnings 0",
 		"lint:fix": "pnpm lint --fix",
 		"prettier-base": "prettier . --ignore-unknown --cache --log-level warn",
 		"format": "pnpm prettier-base --write",
@@ -22,13 +22,14 @@
 		"lorem-ipsum": "^2.0.8"
 	},
 	"devDependencies": {
+		"@eslint/js": "9.39.2",
 		"@types/lodash.deburr": "4.1.9",
 		"@typescript-eslint/eslint-plugin": "8.55.0",
 		"@typescript-eslint/parser": "8.55.0",
 		"@vitest/coverage-v8": "4.0.18",
-		"eslint": "8.57.1",
+		"eslint": "9.39.2",
 		"eslint-config-prettier": "10.1.8",
-		"eslint-plugin-import": "2.32.0",
+		"eslint-plugin-import-x": "4.16.1",
 		"husky": "9.1.7",
 		"lint-staged": "16.2.7",
 		"lodash.deburr": "4.1.0",
@@ -36,6 +37,7 @@
 		"semantic-release": "25.0.3",
 		"tsup": "8.5.1",
 		"typescript": "5.9.3",
+		"typescript-eslint": "8.55.0",
 		"vitest": "4.0.18"
 	},
 	"engines": {
