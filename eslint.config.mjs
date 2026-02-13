@@ -3,22 +3,15 @@ import tseslint from 'typescript-eslint'
 import importPlugin from 'eslint-plugin-import-x'
 import prettierConfig from 'eslint-config-prettier'
 
-export default tseslint.config(
-	// Ignore patterns
-	{
-		ignores: ['dist/**', 'coverage/**', 'node_modules/**', '.eslintrc.cjs'],
-	},
-
+export default [
 	// Base config for all files
 	eslint.configs.recommended,
 
 	// TypeScript files
+	...tseslint.configs.strictTypeChecked,
+	...tseslint.configs.stylisticTypeChecked,
 	{
 		files: ['**/*.ts', '**/*.tsx'],
-		extends: [
-			...tseslint.configs.strictTypeChecked,
-			...tseslint.configs.stylisticTypeChecked,
-		],
 		languageOptions: {
 			parser: tseslint.parser,
 			parserOptions: {
@@ -85,15 +78,29 @@ export default tseslint.config(
 			'*.config.mjs',
 			'*.config.cjs',
 		],
-		extends: [tseslint.configs.disableTypeChecked],
+		...tseslint.configs.disableTypeChecked,
 	},
 
 	// JavaScript files - disable type-checked rules
 	{
 		files: ['**/*.js', '**/*.mjs', '**/*.cjs'],
-		extends: [tseslint.configs.disableTypeChecked],
+		...tseslint.configs.disableTypeChecked,
+		languageOptions: {
+			sourceType: 'commonjs',
+			globals: {
+				require: 'readonly',
+				module: 'readonly',
+				__dirname: 'readonly',
+				__filename: 'readonly',
+			},
+		},
 	},
 
 	// Prettier config to turn off conflicting rules (must be last)
 	prettierConfig,
-)
+
+	// Global ignores (must be last)
+	{
+		ignores: ['dist/**', 'coverage/**', 'node_modules/**'],
+	},
+]
