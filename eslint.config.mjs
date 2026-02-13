@@ -1,9 +1,10 @@
 import eslint from '@eslint/js'
+import { defineConfig, globalIgnores } from 'eslint/config'
 import tseslint from 'typescript-eslint'
 import importPlugin from 'eslint-plugin-import-x'
 import prettierConfig from 'eslint-config-prettier'
 
-export default [
+export default defineConfig([
 	// Base config for all files
 	eslint.configs.recommended,
 
@@ -106,7 +107,5 @@ export default [
 	prettierConfig,
 
 	// Global ignores (must be last)
-	{
-		ignores: ['dist/**', 'coverage/**', 'node_modules/**'],
-	},
-]
+	globalIgnores(['dist/**', 'coverage/**', 'node_modules/**']),
+])
