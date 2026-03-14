@@ -1,4 +1,6 @@
-import { loremIpsum, LoremIpsum, type ILoremIpsumParams } from 'lorem-ipsum'
+import type { ILoremIpsumParams } from 'lorem-ipsum'
+
+import { loremIpsum, LoremIpsum } from 'lorem-ipsum'
 
 import MASTODONTE_WORDS from './words'
 
@@ -15,7 +17,7 @@ class Mastodonte extends LoremIpsum {
 	constructor(...args: LoremIpsumConstructorParams) {
 		const [options, format, suffix] = args
 
-		const superOptions = options ? options : {}
+		const superOptions = options ?? {}
 		superOptions.words = MASTODONTE_WORDS
 
 		super(superOptions, format, suffix)

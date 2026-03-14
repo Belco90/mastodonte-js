@@ -34,7 +34,6 @@
 		"noUnusedParameters": true,
 		"noImplicitReturns": true,
 		"noFallthroughCasesInSwitch": true,
-		"forceConsistentCasingInFileNames": true,
-		"baseUrl": "./"
+		"forceConsistentCasingInFileNames": true
 	}
 }
