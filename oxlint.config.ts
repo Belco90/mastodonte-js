@@ -1,7 +1,7 @@
 import { defineConfig } from 'oxlint'
 
 export default defineConfig({
-	plugins: ['import', 'typescript', 'unicorn'],
+	plugins: ['import', 'typescript', 'unicorn', 'vitest'],
 	categories: {
 		correctness: 'warn',
 		suspicious: 'warn',
@@ -20,13 +20,4 @@ export default defineConfig({
 		reportUnusedDisableDirectives: 'warn',
 		typeAware: true,
 	},
-	overrides: [
-		{
-			files: ['**/*.test.ts', '**/*.test.tsx', '**/*.spec.ts', '**/*.spec.tsx'],
-			plugins: ['vitest'],
-			rules: {
-				'vitest/prefer-to-be': 'warn',
-			},
-		},
-	],
 })
