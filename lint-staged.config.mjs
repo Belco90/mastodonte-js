@@ -1,8 +1,8 @@
 const lintStagedConfig = {
 	'**/*.{js,jsx,ts,tsx,mjs,cjs,mts}': [
-		'oxlint --import-plugin --deny-warnings',
+		'oxlint --config=oxlint.config.ts --import-plugin --deny-warnings',
 	],
-	'*': 'oxfmt',
+	'*': 'oxfmt --config=oxfmt.config.ts',
 }
 
 export default lintStagedConfig
