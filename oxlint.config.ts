@@ -20,4 +20,13 @@ export default defineConfig({
 		reportUnusedDisableDirectives: 'warn',
 		typeAware: true,
 	},
+	overrides: [
+		{
+			files: ['**/*.test.ts', '**/*.test.tsx', '**/*.spec.ts', '**/*.spec.tsx'],
+			plugins: ['vitest'],
+			rules: {
+				'vitest/prefer-to-be': 'warn',
+			},
+		},
+	],
 })

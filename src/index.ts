@@ -1,4 +1,5 @@
-import { loremIpsum, LoremIpsum, type ILoremIpsumParams } from 'lorem-ipsum'
+import { loremIpsum, LoremIpsum } from 'lorem-ipsum'
+import type { ILoremIpsumParams } from 'lorem-ipsum'
 
 import MASTODONTE_WORDS from './words'
 
