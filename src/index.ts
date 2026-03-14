@@ -15,7 +15,7 @@ class Mastodonte extends LoremIpsum {
 	constructor(...args: LoremIpsumConstructorParams) {
 		const [options, format, suffix] = args
 
-		const superOptions = options ? options : {}
+		const superOptions = options ?? {}
 		superOptions.words = MASTODONTE_WORDS
 
 		super(superOptions, format, suffix)

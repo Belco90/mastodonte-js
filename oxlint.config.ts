@@ -15,4 +15,9 @@ export default defineConfig({
 	},
 	globals: {},
 	ignorePatterns: ['dist', 'coverage', 'node_modules'],
+	options: {
+		denyWarnings: true,
+		reportUnusedDisableDirectives: 'warn',
+		typeAware: true,
+	},
 })
