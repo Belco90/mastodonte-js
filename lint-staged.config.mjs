@@ -1,7 +1,5 @@
 const lintStagedConfig = {
-	'**/*.{js,jsx,ts,tsx,mjs,cjs,mts}': [
-		'oxlint --import-plugin --deny-warnings',
-	],
+	'**/*.{js,jsx,ts,tsx,mjs,cjs,mts}': ['oxlint --import-plugin --deny-warnings'],
 	'*': 'oxfmt',
 }
 

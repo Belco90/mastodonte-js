@@ -2,7 +2,47 @@
 	"name": "mastodonte",
 	"version": "0.0.0-semantically-released",
 	"description": "🐘 mastodonte - un generador de palabras para los mastodontes, cracks y figuras como tú.",
+	"keywords": [
+		"dummy",
+		"ipsum",
+		"lorem",
+		"mastodonte",
+		"placeholder",
+		"text",
+		"texto"
+	],
+	"homepage": "https://github.com/Belco90/mastodonte-js",
+	"bugs": {
+		"url": "https://github.com/Belco90/mastodonte-js/issues"
+	},
+	"license": "MIT",
+	"author": {
+		"name": "Mario Beltrán",
+		"email": "me@mario.dev",
+		"url": "https://mario.dev/"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Belco90/mastodonte-js.git"
+	},
+	"files": [
+		"dist",
+		"README.md",
+		"LICENSE"
+	],
 	"type": "module",
+	"module": "./dist/index.js",
+	"typings": "./dist/index.d.ts",
+	"exports": {
+		".": {
+			"types": {
+				"default": "./dist/index.d.ts"
+			},
+			"import": {
+				"default": "./dist/index.js"
+			}
+		}
+	},
 	"scripts": {
 		"build": "tsup",
 		"start": "pnpm build --watch",
@@ -37,45 +77,5 @@
 		"node": "^20.0.0 || ^22.0.0",
 		"pnpm": "^9.15.0"
 	},
-	"packageManager": "pnpm@9.15.9",
-	"license": "MIT",
-	"files": [
-		"dist",
-		"README.md",
-		"LICENSE"
-	],
-	"module": "./dist/index.js",
-	"typings": "./dist/index.d.ts",
-	"exports": {
-		".": {
-			"types": {
-				"default": "./dist/index.d.ts"
-			},
-			"import": {
-				"default": "./dist/index.js"
-			}
-		}
-	},
-	"author": {
-		"name": "Mario Beltrán",
-		"email": "me@mario.dev",
-		"url": "https://mario.dev/"
-	},
-	"keywords": [
-		"lorem",
-		"ipsum",
-		"placeholder",
-		"text",
-		"dummy",
-		"mastodonte",
-		"texto"
-	],
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/Belco90/mastodonte-js.git"
-	},
-	"homepage": "https://github.com/Belco90/mastodonte-js",
-	"bugs": {
-		"url": "https://github.com/Belco90/mastodonte-js/issues"
-	}
+	"packageManager": "pnpm@9.15.9"
 }
