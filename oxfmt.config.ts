@@ -1,4 +1,6 @@
-export default {
+import { defineConfig } from 'oxfmt'
+
+export default defineConfig({
 	singleQuote: true,
 	semi: false,
 	useTabs: true,
@@ -11,4 +13,4 @@ export default {
 		'pnpm-lock.yaml',
 		'.gitignore',
 	],
-}
+})
