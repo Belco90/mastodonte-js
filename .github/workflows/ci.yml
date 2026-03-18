@@ -31,7 +31,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        validation_script: ['lint', 'type-check', 'format:check']
+        validation_script: ['build', 'lint', 'type-check', 'format:check']
 
     steps:
       - name: Checkout repository

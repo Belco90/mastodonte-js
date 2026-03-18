@@ -1,5 +1,5 @@
 {
-	"include": ["src", "tsup.config.ts"],
+	"include": ["src", "tsdown.config.ts"],
 	"compilerOptions": {
 		/* Base options */
 		"esModuleInterop": true,
