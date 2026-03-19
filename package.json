@@ -82,6 +82,8 @@
 	"packageManager": "pnpm@10.32.1",
 	"pnpm": {
 		"verifyDepsBeforeRun": "warn",
-		"onlyBuiltDependencies": ["esbuild"]
+		"allowBuilds": {
+			"esbuild": true
+		}
 	}
 }
