@@ -21,6 +21,11 @@
 			"automerge": true
 		},
 		{
+			"description": "Auto-merge oxlint and oxfmt dependencies",
+			"matchPackagePatterns": ["^oxlint", "^oxfmt"],
+			"automerge": true
+		},
+		{
 			"description": "Get pnpm updates once a month",
 			"matchDepTypes": ["packageManager"],
 			"matchPackageNames": ["pnpm"],
