@@ -4,6 +4,7 @@ import { loremIpsum, LoremIpsum } from 'lorem-ipsum'
 
 import MASTODONTE_WORDS from './words'
 
+// oxlint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types -- external type
 const mastodonte = (args: ILoremIpsumParams = {}): string => {
 	return loremIpsum({
 		...args,
@@ -14,6 +15,7 @@ const mastodonte = (args: ILoremIpsumParams = {}): string => {
 type LoremIpsumConstructorParams = ConstructorParameters<typeof LoremIpsum>
 
 class Mastodonte extends LoremIpsum {
+	// oxlint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types -- external type
 	constructor(...args: LoremIpsumConstructorParams) {
 		const [options, format, suffix] = args
 
