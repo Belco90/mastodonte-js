@@ -58,7 +58,7 @@
 		"semantic-release": "semantic-release"
 	},
 	"dependencies": {
-		"lorem-ipsum": "^2.0.8"
+		"lorem-ipsum": "^3.0.0"
 	},
 	"devDependencies": {
 		"@arethetypeswrong/cli": "0.18.2",
