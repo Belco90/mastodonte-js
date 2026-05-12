@@ -65,7 +65,7 @@
 		"@types/lodash.deburr": "4.1.9",
 		"@vitest/coverage-v8": "4.1.5",
 		"husky": "9.1.7",
-		"lint-staged": "16.4.0",
+		"lint-staged": "17.0.4",
 		"lodash.deburr": "4.1.0",
 		"oxfmt": "0.48.0",
 		"oxlint": "1.63.0",
