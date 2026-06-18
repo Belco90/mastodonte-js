@@ -63,7 +63,7 @@
 	"devDependencies": {
 		"@arethetypeswrong/cli": "0.18.3",
 		"@types/lodash.deburr": "4.1.9",
-		"@vitest/coverage-v8": "4.1.8",
+		"@vitest/coverage-v8": "4.1.9",
 		"husky": "9.1.7",
 		"lint-staged": "17.0.7",
 		"lodash.deburr": "4.1.0",
@@ -74,7 +74,7 @@
 		"semantic-release": "25.0.5",
 		"tsdown": "0.22.2",
 		"typescript": "5.9.3",
-		"vitest": "4.1.8"
+		"vitest": "4.1.9"
 	},
 	"engines": {
 		"node": "^20.0.0 || ^22.0.0"
