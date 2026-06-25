@@ -61,7 +61,7 @@
 		"lorem-ipsum": "^2.0.8"
 	},
 	"devDependencies": {
-		"@arethetypeswrong/cli": "0.18.3",
+		"@arethetypeswrong/cli": "0.18.4",
 		"@types/lodash.deburr": "4.1.9",
 		"@vitest/coverage-v8": "4.1.9",
 		"husky": "9.1.7",
