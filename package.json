@@ -73,7 +73,7 @@
 		"publint": "0.3.21",
 		"semantic-release": "25.0.5",
 		"tsdown": "0.22.3",
-		"typescript": "5.9.3",
+		"typescript": "7.0.2",
 		"vitest": "4.1.10"
 	},
 	"engines": {
