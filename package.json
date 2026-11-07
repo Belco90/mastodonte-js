@@ -70,7 +70,7 @@
 		"oxfmt": "0.59.0",
 		"oxlint": "1.74.0",
 		"oxlint-tsgolint": "0.25.0",
-		"publint": "0.3.21",
+		"publint": "0.3.25",
 		"semantic-release": "25.0.9",
 		"tsdown": "0.22.3",
 		"typescript": "5.9.3",
