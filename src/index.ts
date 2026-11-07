@@ -1,11 +1,11 @@
-import type { ILoremIpsumParams } from 'lorem-ipsum'
+import type { LoremIpsumParams } from 'lorem-ipsum'
 
 import { loremIpsum, LoremIpsum } from 'lorem-ipsum'
 
 import MASTODONTE_WORDS from './words'
 
 // oxlint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types -- external type
-const mastodonte = (args: ILoremIpsumParams = {}): string => {
+const mastodonte = (args: LoremIpsumParams = {}): string => {
 	return loremIpsum({
 		...args,
 		words: MASTODONTE_WORDS,
