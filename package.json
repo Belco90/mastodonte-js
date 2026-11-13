@@ -72,7 +72,7 @@
 		"oxlint-tsgolint": "7.0.2006",
 		"publint": "0.3.25",
 		"semantic-release": "25.0.9",
-		"tsdown": "0.23.5",
+		"tsdown": "0.23.7",
 		"typescript": "5.9.3",
 		"vitest": "5.1.0"
 	},
